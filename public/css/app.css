@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(174, 215, 247);
+}
+#header{
+    background-color: rgb(174, 215, 247);
+    margin-top: 1px;
+}
+#menu-nav{
+    
+    margin-left: 12%;
+    margin-right: 12%;
+}
+#item-menu li{
+    padding: 5px 5px 5px 5px;
+}
+#item-menu li:hover{
+    background-color: blueviolet;
+    transition: background-color  1s ease-in-out 0.01s;
+    
+    font-size: 18px;
+}
+#item-menu li a:hover{
+    color: beige;
+}
+#navbar img{
+    width: 70px;
+    height: 50px;
+}
