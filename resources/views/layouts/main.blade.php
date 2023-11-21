@@ -9,8 +9,8 @@
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet " href="/css/app.css">
-        <link rel="stylesheet" href="/css/bootstrap.min.css"
+        <link rel="stylesheet " href="css/app.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css"
 
         <!-- Styles -->
         <style>

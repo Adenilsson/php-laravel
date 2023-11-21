@@ -3,30 +3,32 @@
 @section('title', 'HDC Events')
 
 @section('content')
+<div id="search-container" class="col-md-12">
+   
+    <h1 class="banner-title">Busque um Evento</h1>
+    <form action="">
+        <input type="text" id="search" name="search" class="form-control" placeholder="Procurar...">
+    </for>
+</div>
+<div id="events-container" class="row">
+    <h2>Próximos Eventos</h2>
+    <p class="subtitle"> Veja os eventos dos próximos dias</p>
+    <div id="cards-container" class="row">
+        @foreach($events as $event)
+        <div class="card col-md-3">
+            <img src="img/OIP.jpg" alt="{{$event->title}}">
+            <div class="card-body">
+                <p class="card-date">10-09-2023</p>
+                <h5 class="card-title">{{$event->title}}</h5>
+                <p class="card-participants">x Participantes</p>
+                <a href="#" class="btn btn-primary">Saber Mais</a>
 
-@if(10>5)
-    <p>Acondição é verdadeira</p>
-@endif
-@if($nome =="Adenilso")
-    <p>O nome é  {{$nome}}</p>
-@else
-    <P>Nome não encontrado</p>
-@endif
 
-@for($i=0;$i< count($arr); $i++)
+            </div>
+        </div>
         
-        @if($arr[$i]> 3)
-            <p>{{$arr[$i]}} é maior que 3</p>
-            
-        @endif
-@endfor
-@php
-    $nome = "Adenilson";
-    echo $nome;
-@endphp
-{{--ESTE É UM COMENTARIO EM BLADE --}}
-@foreach($nomes as $nome)
+        @endforeach
+    </div>
+</div>
 
-    <p>{{$loop->index}} -- {{$nome}}</p>
-@endforeach
 @endsection
