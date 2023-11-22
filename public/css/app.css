@@ -17,14 +17,17 @@ body{
     padding: 0;
 }
 
-.btn-primary{
+#btn-submit{
+    
     background-color: #f2a340;
     border: 2px solid #c28008;
+    margin-top: 10px;
 }
 
-.btn-primary:hover{
+#btn-submit:hover{
     background-color: #c28008;
     border-color: #c28008;
+    margin-top: 10px;
 }
 
 
@@ -122,3 +125,29 @@ footer{
 footer p{
     margin-bottom: 0;
 }
+
+/*Event create page*/
+#event-create-container{
+   
+    padding: 30px;
+
+}
+#event-create-container h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #212121;
+    text-align: center;
+}
+#event-create-container label{
+    font-weight: bold;
+    color: #000;
+   margin-top: 10px;
+
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea{
+    font-size: 12px;
+}
+

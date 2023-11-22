@@ -9,8 +9,8 @@
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet " href="css/app.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css"
+        <link rel="stylesheet " href="/css/app.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css"
 
         <!-- Styles -->
         <style>
@@ -29,7 +29,7 @@
                             <a href="/" class="nav-link">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Criar Eventos</a>
+                            <a href="/events/create" class="nav-link">Criar Eventos</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Entrar</a>
