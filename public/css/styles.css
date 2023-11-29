@@ -160,8 +160,8 @@ footer p {
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
-  max-width: 750px;
-  width: 750px;
+  max-width: 100%;
+  width:100%;
 
 
 }
@@ -198,4 +198,24 @@ footer p {
   display: flex;
  
   font-size: 16px;
+}
+
+/*Dashboard*/
+.dashboard-title-container{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.dashboard-events-container th{
+  width:25%;
+}
+
+.dashboard-events-container form{
+   display: inline-block;
+}
+
+/*EDIT PAGE*/
+.img-preview{
+  width: 100px;
+  margin-top: 20px;
 }
