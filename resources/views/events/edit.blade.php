@@ -6,7 +6,7 @@
 
 <div id="event-create-container" class="col-md-6 offset-md-3">
     <h1>Editando{{$event->title}}</h1>
-   
+                
     <form action="/events/update/{{$event->id}}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
@@ -31,7 +31,7 @@
             <label for="title">O Evento é privado?</label>
             <select name="private" id="private" class="form-control">
                 <option value="0">Não</option>
-                <option value="1" {{$event->private ==1 ?"selectted='selected'":""}}>Sim</option>
+                <option value="1" {{$event->private == 1 ?"selectted='selected'":""}}>Sim</option>
             </select>
         </div>
         <div class="form-grup">
@@ -41,22 +41,22 @@
         <div class="form-grup">
             <label for="title">Adcione items de infraestrutura:</label>
             <div class="form-group">
-                <input type="checkbox" name="item[]" value="Cadeiras">Cadeiras
+                <input type="checkbox" name="items[]" value="Cadeiras">Cadeiras
             </div>
             <div class="form-group">
-                <input type="checkbox" name="item[]" value="Palco">Pauco
+                <input type="checkbox" name="items[]" value="Palco">Pauco
             </div>
             <div class="form-group">
-                <input type="checkbox" name="item[]" value="Cerveja grátis">Cerveja grátis
+                <input type="checkbox" name="items[]" value="Cerveja grátis">Cerveja grátis
             </div>
             <div class="form-group">
-                <input type="checkbox" name="item[]" value="Open Food">Open Food
+                <input type="checkbox" name="items[]" value="Open Food">Open Food
             </div>
             <div class="form-group">
-                <input type="checkbox" name="item[]" value="Brindes">Brindes
+                <input type="checkbox" name="items[]" value="Brindes">Brindes
             </div>
         </div>
-        <input type="submit" class="btn btn-primary" id="btn-submit" value="Criar Evento">
+        <input type="submit" class="btn btn-primary" id="btn-submit" value="Editar Evento">
     </form>
 
 </div>
